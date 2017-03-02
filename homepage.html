@@ -27,6 +27,7 @@
         .container-fluid {
             padding-top: 70px;
             padding-bottom: 70px;
+            color: #6d6868;
         }
         
         .bg-1 {
@@ -114,43 +115,66 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="register.html" >Register</a></li>
-                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
-                        <ul id="login-dp" class="dropdown-menu">
-                            <li>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputEmail2">Username</label>
-                                                <input type="text" class="form-control" id="login-username" placeholder="Username" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                <input type="password" class="form-control" id="login-password" placeholder="Password" required>
-                                                <div class="help-block text-right "><a href="">Forget the password ?</a></div>
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="profile.html">Profile</a></li> <!-- profile.html sayfası oluşturulmadı -->
+                    <li><a href="#">Log out</a></li> <!-- log out php eklenecek -->
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container-fluid text-center">
-        <h2 class="text-info">Welcome to Marmara University Electronic Voting System</h2>
-        <img src="marmara-university-logo.jpeg" class="img-thumbnail img-responsive" alt="Cinque Terre" width="292" height="92">
-        <br><br>
-        <blockquote class="blockquote-reverse">
-            <p class="text-success">Don't blow off another's candle for it won't make yours shine brighter.</p>
-            <footer> Jaachynma N.E. Agu, The Prince and the Pauper</footer>
+        <h2 class="text-primary">CANDIDATES</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>Candidate 1</p>
+                <img src="Unknown_user.png" alt="Image" class="img-responsive" style="width:100%">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="view-1">View</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="vote-1">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Candidate 2</p>
+                <img src="Unknown_user.png" alt="Image" class="img-responsive" style="width:100%">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="view-2">View</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="vote-2">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Candidate 3</p>
+                <img src="Unknown_user.png" alt="Image" class="img-responsive" style="width:100%">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="view-3">View</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="vote-3">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Candidate 4</p>
+                <img src="Unknown_user.png" alt="Image" class="img-responsive" style="width:100%">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="view-4">View</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="vote-4">Vote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="container-fluid bg-4 text-center">
